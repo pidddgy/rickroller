@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" /> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/web-socket-js/1.0.0/web_socket.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+
+      <script src="main.js"> </script>
+      <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div id = "center"> 
+        <h1 id="title" class="ui header">Rick Roller</h1>
+        <div id = "button" class="ui animated button" onclick="onRickRollStart()">
+          <div class="visible content">Rick Roll People</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </div>
+        <button class="ui button" onclick="onPauseClick()">
+          <i class="pause icon"></i>
+        </button>
+    </div>
+  </body>
+</html>

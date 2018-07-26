@@ -1,0 +1,21 @@
+{
+  "name": "rickrolltest",
+  "version": "1.0.0",
+  "description": "rick roll people",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "author": "pidddgy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
+}
