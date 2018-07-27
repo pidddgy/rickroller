@@ -17,7 +17,6 @@ const onPauseClick = () => {
 };
 
 const onStopClick = () => {
-  console.log('hi');
   socket.send(JSON.stringify({
     type: 'stop',
   }));
