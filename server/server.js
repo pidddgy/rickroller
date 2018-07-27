@@ -30,5 +30,10 @@ wss.on('connection', (ws) => {
         type: 'pause',
       }));
     }
+    if (event.type === 'stop') {
+      wss.broadcast(JSON.stringify({
+        type: 'stop',
+      }));
+    }
   };
 });

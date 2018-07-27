@@ -16,12 +16,23 @@ const onPauseClick = () => {
   }));
 };
 
+const onStopClick = () => {
+  console.log('hi');
+  socket.send(JSON.stringify({
+    type: 'stop',
+  }));
+};
+
 socket.onmessage = (event) => {
   const data = JSON.parse(event.data);
   if (data.type === 'startPlaying') {
     rickRoll.play();
   }
   if (data.type === 'pause') {
+    rickRoll.pause();
+  }
+  if (data.type === 'stop') {
+    rickRoll.currentTime = 0;
     rickRoll.pause();
   }
 };
